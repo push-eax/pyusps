@@ -38,3 +38,4 @@ with open("input.txt", "r") as input:
                 output.write(line.strip() + "\t\t" + postalCode + "\n")
             except:
                 print("No ZIP found for " + line.strip())
+                output.write(line.strip() + "\t\t" + "NOT_FOUND" + "\n")
